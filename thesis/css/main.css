@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+// 기본 스타일, 숨김 처리
+
+.skip-nav, .hidden, legend {
+    background: red;
+    position: absolute;
+    left: -9999em;
+}
+
+.skip-nav:focus {
+    left: 0;
+    z-index: 10;
+}
+
+body {
+    color: #181818;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.header, .main, .footer {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav, h1 {
+    display: inline;
+}
+
+.evaluation {
+    vertical-align: middle;
+}

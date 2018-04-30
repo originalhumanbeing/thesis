@@ -5,30 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>졸업작품</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="menu">
-                <h1>졸업작품</h1>
-                <nav class="gnb">
+            <div class="menu row">
+                <h1 class="menu-title col-md-2 col-md-push-5">졸업작품</h1>
+                <nav class="gnb navbar col-md-pull-1">
                     <h2 class="hidden">메인 메뉴</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Search</a>
-                        </li>
-                        <li>
-                            <a href="#">Today's Show/NOMINEE</a>
-                        </li>
-                        <li>
-                            <a href="#">Yesterday's News</a>
-                        </li>
-                    </ul>
+                    <div class="menu btn-group col-md-push-6" role="group">
+                        <button type="button" class="btn btn-default" aria-label="Menu">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default dropdown-toggle" aria-label="Menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!--<span>Menu</span>-->
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Evaluate NOMINEEs</a></li>
+                            <!--<li><a href="#">Yesterday's News</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="search col-md-3 col-md-pull-1">
+                        <button type="button" class="btn btn-default" aria-label="Search">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <!--<div class="member btn-group col-md-push-3" role="group">-->
+                        <!--<button type="submit" class="signIn btn btn-success">Sign In</button>-->
+                        <!--<button type="submit" class="signUp btn btn-success">Sign Up</button>-->
+                    <!--<div class="evaluation-box col-md-2 col-md-push-6"><a href="#"><span class="evaluation">Evaluate Nominees</span></a></div>-->
                 </nav>
-                <div class="member">
-                    <button type="submit" class="signIn">Sign In</button>
-                    <button type="submit" class="signUp">Sign Up</button>
-                </div>
+
             </div>
         </header>
         <main>
@@ -53,5 +66,7 @@
             <span class="copyright">copyright. Han Hyun-Jung</span>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
